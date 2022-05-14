@@ -18,7 +18,7 @@ provider "aws" {
 
 
 module "rds-aurora" {
-  source                             = "https://github.com/SrDinga/Aurora-postgre-infra.git"
+  source                             = "git::git@github.com:SrDinga/Aurora-postgre-infra.git"
   aws_rds_aurora_cluster_config      = var.aws_rds_aurora_cluster_config
   aws_aurora_postgresql_cluster_tags = var.aws_aurora_postgresql_cluster_tags
   environment                        = var.environment
